@@ -13,3 +13,162 @@
  *= require_tree .
  *= require_self
  */
+
+.container {
+  text-align: center;
+}
+
+.tasks,
+.description,
+.form {
+text-align: left;
+border: solid 1px black;
+border-radius: 10px;
+}
+
+.form-box {
+  flex-direction: column;
+}
+
+h2 {
+  margin-left: 20px !important;
+}
+
+.item {
+  padding: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+
+.field {
+  color: #707070;
+  padding-left: 20px;
+  margin-left: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.field-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.field-description {
+  height: 25vh;
+  font-style: italic;
+}
+
+.description {
+  padding: 20px;
+}
+
+.description h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.description h4 {
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #1A5991;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.detailed-description {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #f6f6f6;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.detailed {
+  font-style: italic;
+  margin-bottom: 0px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.line{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.line:last-child {
+  border: none;
+}
+
+.line_title {
+  text-decoration: none;
+  color: #000;
+  width: 200px;
+  font-size: 24px;
+  flex: 1 0 auto;
+  padding-left: 20px;
+  padding-right: 40px;
+  margin-right: 10px;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.line_title:hover {
+  background: #f6f6f6;
+  font-size: 30px;
+}
+
+.button {
+margin-top: 40px;
+font-size: 24px;
+}
+
+.btn {
+  font-size: 20px !important;
+}
+
+.btn-options {
+  flex: 0 0 10%;
+  margin-right: 10px;
+  font-size: 14px !important;
+}
+
+.button-submit {
+  text-align: center;
+}
+
+i {
+  padding: 10px;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1A5991;
+  display: flex;
+  align-items: center;
+}
+
+.question i {
+  font-size: 30px;
+  color: green;
+}
+

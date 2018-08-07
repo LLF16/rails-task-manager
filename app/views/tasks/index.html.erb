@@ -1,0 +1,33 @@
+<div class="container">
+
+
+  <h1 class='headings'>My tasks</h1>
+
+  <div class="tasks">
+
+    <ul>
+     <% @tasks.each do |task| %>
+
+       <li class="line">
+          <% if task.completed?%>
+            <i class="fas fa-check"></i>
+          <% else %>
+            <i class="fas fa-thumbs-down"></i>
+          <% end %>
+          <%= link_to task.title, task_path(task),{:class => "line_title"} %>
+          <%= link_to 'Edit', edit_task_path(task), {:class => "btn btn-default btn-options"} %>
+          <%= link_to 'Delete', task_path(task), method: :delete, :class => "btn btn-danger btn-options" %>
+        </li>
+
+      <% end %>
+    </ul>
+
+  </div>
+
+  <div class="button">
+
+    <%= link_to (raw("<i class='fas fa-plus-circle'></i>Create a new task")), new_task_path, :class => "btn btn-primary btn-create"%>
+
+  </div>
+
+</div>
